@@ -1,15 +1,15 @@
-var home = $('.home');
-home.hide();
-home.delay(500).fadeIn(1000);
+// var home = $('.home');
+// home.hide();
+// home.delay(300).fadeIn(300);
 
 
 /* Open */
 function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-  console.log("working")
+  document.getElementById("myNav").style.width = "100%";
 }
 
 /* Close */
 function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.width = "0%";
 }
+

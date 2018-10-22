@@ -19,6 +19,7 @@ h6 {
 :root {
   --black: #000;
   --white: #fff;
+  --brand: rgb(0, 40, 86);
   --overlay: rgba(0, 40, 86, 0.5);
   --orange: #ffbc06;
 }
@@ -54,7 +55,7 @@ a:hover {
   flex-direction: column;
   height: 100vh;
   text-align: center;
-  background: url('../imgs/5.jpeg') no-repeat center;
+  background: url('../img/banner.jpeg') no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 100;
@@ -76,17 +77,16 @@ a:hover {
   font-size: 7rem;
   color: var(--white);
   font-family: 'Allura', cursive;
+  text-shadow: 2px 2px 2px var(--overlay);
 }
 
 .tag {
-  color: #f35626;
-  background-image: -webkit-linear-gradient(135deg, #ffffff, #feab3a);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: var(--white);
   font-size: 1.2rem;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 60s infinite linear;
-  animation: hue 60s infinite linear;
+  text-shadow: 2px 2px 2px var(--overlay);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .menu-icon {
@@ -108,13 +108,13 @@ a:hover {
 
 /* The Overlay (background) */
 .overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
+  width: 0;
+  height: 100%;
+  position: absolute;
   z-index: 1000;
   left: 0;
   top: 0;
-  background: url('../imgs/16.jpeg') center no-repeat;
+  background: var(--brand);
   background-size: cover;
   opacity: 1;
   overflow-x: hidden;
@@ -129,7 +129,7 @@ a:hover {
   margin-top: 30px;
 }
 
-.overlay-content a {
+.link {
   padding-right: 20px;
   padding: 8px;
   text-decoration: none;
@@ -139,14 +139,22 @@ a:hover {
   color: var(--white);
   display: block;
   width: 300px;
-  margin-left:auto;
-  transition: 0.3s;
+  margin-left: auto;
+  transition: 1.3s;
 }
 
-.overlay-content a:hover,
-.overlay-content a:focus {
-  color: #f1f1f1;
-  border-right: 10px solid orangered;
+
+.link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 10px;
+  background: var(--orange);
+  transition: width .3s;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .overlay .closebtn {
@@ -185,9 +193,6 @@ a:hover {
 /* MediaQuery css */
 
 @media screen and (max-width: 768px) {
-  .home {
-    justify-content: center;
-  }
 
   .title {
     font-size: 4rem;
@@ -202,4 +207,24 @@ a:hover {
     top: 15px;
     right: 25px;
   }
+
+  .menu-icon {
+    right: 15px;
+    top: 15px;
+  }
+
+  .logo {
+    left: 0;
+    top: 0;
+  }
+
+  .link {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .link::after {
+    height: 4px;
+  }
 }
+
