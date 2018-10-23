@@ -20,8 +20,8 @@ h6 {
   --black: #000;
   --white: #fff;
   --brand: rgb(0, 40, 86);
-  --overlay: rgba(0, 40, 86, 0.5);
-  --orange: #ffbc06;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --orange: #FFA500;
 }
 
 img {
@@ -44,6 +44,13 @@ a:hover {
 
 .color {
   color: var(--orange);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
 }
 
 /* Home screen css starts here */
@@ -77,7 +84,6 @@ a:hover {
   font-size: 7rem;
   color: var(--white);
   font-family: 'Allura', cursive;
-  text-shadow: 2px 2px 2px var(--overlay);
 }
 
 .tag {
@@ -90,7 +96,7 @@ a:hover {
 }
 
 .menu-icon {
-  position: absolute;
+  position: fixed;
   right: 40px;
   top: 40px;
   color: var(--white);
@@ -99,7 +105,7 @@ a:hover {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   left: 10px;
   top: 20px;
   width: 100px;
@@ -107,6 +113,7 @@ a:hover {
 }
 
 /* The Overlay (background) */
+
 .overlay {
   width: 0;
   height: 100%;
@@ -118,7 +125,7 @@ a:hover {
   background-size: cover;
   opacity: 1;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .overlay-content {
@@ -143,7 +150,6 @@ a:hover {
   transition: 1.3s;
 }
 
-
 .link::after {
   content: '';
   display: block;
@@ -163,7 +169,6 @@ a:hover {
   right: 45px;
   font-size: 60px;
 }
-
 
 .social {
   width: 100%;
@@ -188,43 +193,48 @@ a:hover {
   transform: translateY(-10px);
 }
 
+.innerpage {
+  height: 100vh;
+  background-color: var(--brand);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.innerpage .thumbnail {
+  width: 500px;
+}
 
 /* MediaQuery css */
 
 @media screen and (max-width: 768px) {
-
   .title {
     font-size: 4rem;
   }
-
   .social {
     margin-top: 50px;
   }
-
   .overlay .closebtn {
     font-size: 60px;
     top: 15px;
     right: 25px;
   }
-
   .menu-icon {
     right: 15px;
     top: 15px;
   }
-
   .logo {
     left: 0;
     top: 0;
   }
-
   .link {
     font-size: 24px;
     text-align: left;
   }
-
   .link::after {
     height: 4px;
   }
+  .innerpage .thumbnail {
+    width: 275px;
+  }
 }
-

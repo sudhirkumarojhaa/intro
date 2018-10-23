@@ -13,3 +13,8 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+$(document).ready(function () {
+  $("button").click(function () {
+    $(".home").load("../red.html");
+  });
+});
