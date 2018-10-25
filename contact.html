@@ -10,32 +10,59 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani|Lato|Allura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Mr+De+Haviland|Mrs+Saint+Delafield" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-  <!-- Header Code -->
-  <section class="header">
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a class="link" href="./about.html">About</a>
-        <a class="link" href="./work.html">Work</a>
-        <a class="link" href="./bucket.html">Bucket List</a>
-        <a class="link" href="./contact.html">Contact</a>
+  <section class="innerpage">
+    <!-- Header Code -->
+    <section class="header inner-header ">
+      <a href="./index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+      <span class="menu-icon" onclick="openNav()"><i class="fas fa-align-right"></i></span>
+    </section>
+    <!-- Menu Code -->
+    <section class="menu">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a class="link" href="./index.html">Home</a>
+          <a class="link" href="./about.html">About</a>
+          <a class="link" href="./work.html">Work</a>
+          <a class="link" href="./bucket.html">Bucket List</a>
+          <a class="link" href="./contact.html">Contact</a>
+        </div>
       </div>
-    </div>
-    <span class="menu-icon" onclick="openNav()"><i class="fas fa-align-right"></i></span>
-    <a href="./index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+    </section>
+    <!-- Content Code -->
+    <section class="about">
+      <div class="sidebar">
+        <div class="line"></div>
+        <div class="box">
+          <div class="box-a"></div>
+          <div class="box-b"></div>
+          <div class="box-c"></div>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="content">
+        <h1 class="page-title animated fadeIn delay-1s">Contact <span class="color">me</span></h1>
+        <div class="page-content animated fadeIn delay-2s">
+          <h1>Get in Touch</h1>
+          <p>Good things happen when we connect and share our thoughts and ideas.</p>
+          <form action="/action_page.php">
+            <input type="text" id="name" name="name" placeholder="Name..">
+            <input type="email" id="email" name="email" placeholder="Email..">
+            <input type="textarea" id="comments" name="comments" placeholder="What you want to discuss..">
+            <input type="number" id="phone" name="phone" placeholder="Contact Number ..">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
   </section>
 
-  <!-- Content Code -->
-  <div class="innerpage">
-    <div class="thumbnail">
-      <img src="./img/cs.png" alt="">
-    </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/custom.js"></script>

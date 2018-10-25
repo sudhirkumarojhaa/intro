@@ -9,25 +9,32 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Rajdhani|Lato|Allura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani|Lato|Allura|Caveat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Mr+De+Haviland|Mrs+Saint+Delafield" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
   <!-- Header Code -->
-  <section class="header">
+
+  <section class="header ">
+    <a href="./index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+    <span class="menu-icon" onclick="openNav()"><i class="fas fa-align-right"></i></span>
+  </section>
+
+  <!-- Menu Code -->
+  <section class="menu">
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
+        <a class="link" href="./index.html">Home</a>
         <a class="link" href="./about.html">About</a>
         <a class="link" href="./work.html">Work</a>
         <a class="link" href="./bucket.html">Bucket List</a>
         <a class="link" href="./contact.html">Contact</a>
       </div>
     </div>
-    <span class="menu-icon" onclick="openNav()"><i class="fas fa-align-right"></i></span>
-    <a href="./index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
   </section>
 
   <!-- Content Code -->
