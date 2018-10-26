@@ -1,6 +1,6 @@
-// var home = $('.home');
-// home.hide();
-// home.delay(300).fadeIn(300);
+var home = $('.home');
+home.hide();
+home.delay(300).fadeIn(300);
 
 
 /* Open */
@@ -45,3 +45,6 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
+
+$( ".owl-prev").html('<i class="fas fa-arrow-left"></i>');
+$( ".owl-next").html('<i class="fas fa-arrow-right"></i>');
