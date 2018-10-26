@@ -50,6 +50,7 @@ a:hover {
 
 .color {
   color: var(--orange);
+  padding: 0 15px;
 }
 
 .header {
@@ -109,7 +110,7 @@ a:hover {
 
 .menu-icon {
   color: var(--white);
-  font-size: 30px;
+  font-size: 36px;
   padding: 15px;
 }
 
@@ -208,17 +209,40 @@ a:hover {
 
 /* About Page css  */
 
-.about {
+.page-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.work .content,
+.about .content {
+  height: 100vh;
+  width: 85%;
+  background: url('../img/aboutbg.jpg') repeat center;
+  overflow: hidden;
+}
+
+.bucket .content {
+  height: 100vh;
+  width: 85%;
+  background: url('../img/bucketbg.jpg') repeat center;
+  background-size: 200px;
+  overflow: hidden;
+}
+
+.contact .content {
+  height: 100vh;
+  width: 85%;
+  background: url('../img/contactbg.jpeg') repeat center;
+  background-size: 200px;
+  overflow: hidden;
+}
+
 .tagline {
   font-family: 'Lato', sans-serif;
   font-size: 40px;
-  border-bottom: 5px solid var(--orange);
 }
 
 .innerpage .menu-icon {
@@ -245,14 +269,15 @@ a:hover {
 .page-title {
   padding: 10px 30px;
   font-family: 'Abril Fatface', cursive;
-  font-size: 60px;
+  font-size: 80px;
   text-transform: capitalize;
-  text-align: left;
+  text-align: center;
 }
 
 .page-content {
   font-size: 24px;
   margin: 50px 0;
+  font-family: 'Times New Roman', serif;
   padding: 10px 50px;
   color: var(--gray);
   background-color: rgba(255, 255, 255, 0.9);
@@ -264,42 +289,106 @@ a:hover {
 }
 
 .sign {
-  font-family: 'Mr De Haviland', cursive;
-  font-size: 40px;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 36px;
   font-weight: bold;
   color: var(--brand);
-  text-align: right;
+  text-align: left;
 }
 
 .line {
   width: 10px;
-  height: 4px;
+  height: 5px;
   background-color: var(--orange);
-  animation: example 15s linear infinite;
+  animation: example 45s linear infinite;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+/* bucketlist css */
+
+.left {
+  transform: rotate(4deg);
 }
 
-@keyframes rotates {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.right {
+  transform: rotate(-4deg);
+}
+
+
+.content li {
+  padding: 10px;
+  width: 300px;
+  box-shadow: 5px 5px 5px var(--black);
+  margin: 15px 5px;
+  transition: all .2s ease-in-out;
+  font-family: 'Lato',
+    sans-serif;
+  background: var(--brand);
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 2px;
+  list-style-type: disc;
+}
+
+.content li:hover {
+  background: tomato;
+  transform: rotate(0deg);
+}
+
+.bucketlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content .done {
+  background-color: #21af8c;
+}
+
+
+/* Work css */
+.owl-carousel {
+  margin: 20px 0;
+}
+
+.owl-carousel .owl-item img {
+  height: 200px;
+}
+
+.owl-nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: var(--white);
+ font-size: 30px;
+}
+
+.owl-prev,
+.owl-next {
+  width: 40px;
+  height: 40px;
+  background-color: var(--brand) !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+
+
+
+/* Animation css */
+
+.text-img {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 36px;
+  background: url("https://media.giphy.com/media/TLLvsTMRYgBlS/giphy.gif") center;
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .box {
@@ -327,28 +416,50 @@ a:hover {
   animation: rotate 15s linear infinite;
 }
 
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotates {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes example {
   0% {
     width: 0;
   }
+
   50% {
     width: 100%;
   }
+
   100% {
     width: 0;
   }
 }
 
-.text-img {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 36px;
-  background: url("https://media.giphy.com/media/TLLvsTMRYgBlS/giphy.gif") center;
-  background-size: contain;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
+/* form css */
 form {
   display: flex;
   align-content: flex-start;
@@ -383,47 +494,63 @@ input:focus {
   .container {
     width: 90%;
   }
+
   .title {
     font-size: 4rem;
   }
-  .logo {
-    width: 80px;
-  }
+
   .innerpage .menu-icon {
-    font-size: 24px;
     color: var(--white);
   }
+
   .social {
-    margin-top: 50px;
+    margin-top: 150px;
   }
+
   .link {
     font-size: 24px;
     text-align: left;
   }
+
   .link::after {
     height: 4px;
   }
+
   .sidebar {
     display: none;
   }
-  .about .content {
+
+  .innerpage .content {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
+
   .innerpage .header {
     background-color: var(--brand);
   }
+
   .page-content {
     font-size: 16px;
     padding: 10px;
-  }
-  .page-title {
-    margin-top: 100px;
-    font-size: 36px;
     text-align: center;
   }
+
+  .page-title {
+    margin-top: 100px;
+    font-size: 52px;
+  }
+
   .tagline {
     font-size: 30px;
     text-align: center;
+  }
+
+  input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
   }
 }

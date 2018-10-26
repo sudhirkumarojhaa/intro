@@ -13,41 +13,35 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-$(document).ready(function () {
-  $("button").click(function () {
-    $(".home").load("../red.html");
-  });
-});
 
-
-//DOM load event
-window.addEventListener("DOMContentLoaded", () => {
-
-  const spotlight = document.querySelector('.spotlight');
-
-  let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
-
-  window.addEventListener('mousemove', e => updateSpotlight(e));
-
-  window.addEventListener('mousedown', e => {
-
-    spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.95) 150px)';
-
-    updateSpotlight(e);
-
-  });
-
-  window.addEventListener('mouseup', e => {
-
-    spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
-
-    updateSpotlight(e);
-
-  });
-
-  function updateSpotlight(e) {
-
-    spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
-
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  autoplay:true,
+  autoplayTimeout:5000,
+  animateOut: 'fadeOut',
+  autoplayHoverPause:true,
+  animateOut: 'slideOutDown',
+  animateIn: 'flipInX',
+  items: 1,
+  margin: 30,
+  stagePadding: 30,
+  smartSpeed: 450,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 2,
+      nav: false
+    },
+    1000: {
+      items: 4,
+      nav: true,
+      loop: false
+    }
   }
-});
+})
+
