@@ -16,7 +16,7 @@ function closeNav() {
 
 $('.owl-carousel').owlCarousel({
   loop: true,
-  margin: 10,
+  margin: 5,
   responsiveClass: true,
   autoplay:true,
   autoplayTimeout:5000,
@@ -38,7 +38,7 @@ $('.owl-carousel').owlCarousel({
       nav: false
     },
     1000: {
-      items: 4,
+      items: 2,
       nav: true,
       loop: false
     }

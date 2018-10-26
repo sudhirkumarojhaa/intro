@@ -32,7 +32,7 @@ font-family: 'Mrs Saint Delafield', cursive; */
 
 img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 li {
@@ -110,7 +110,7 @@ a:hover {
 
 .menu-icon {
   color: var(--white);
-  font-size: 36px;
+  font-size: 30px;
   padding: 15px;
 }
 
@@ -146,6 +146,7 @@ a:hover {
   position: relative;
   top: 25%;
   width: 100%;
+  height:100%;
   text-align: right;
   margin-top: 30px;
 }
@@ -154,7 +155,7 @@ a:hover {
   padding-right: 20px;
   padding: 8px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--white);
@@ -212,20 +213,20 @@ a:hover {
 .page-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .work .content,
 .about .content {
-  height: 100vh;
+  height: 100%;
   width: 85%;
   background: url('../img/aboutbg.jpg') repeat center;
   overflow: hidden;
 }
 
 .bucket .content {
-  height: 100vh;
+  height: 100%;
   width: 85%;
   background: url('../img/bucketbg.jpg') repeat center;
   background-size: 200px;
@@ -233,7 +234,7 @@ a:hover {
 }
 
 .contact .content {
-  height: 100vh;
+  height: 100%;
   width: 85%;
   background: url('../img/contactbg.jpeg') repeat center;
   background-size: 200px;
@@ -242,7 +243,7 @@ a:hover {
 
 .tagline {
   font-family: 'Lato', sans-serif;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .innerpage .menu-icon {
@@ -250,7 +251,6 @@ a:hover {
 }
 
 .sidebar {
-  height: 100vh;
   width: 15%;
   background-color: var(--brand);
   display: flex;
@@ -260,7 +260,7 @@ a:hover {
 }
 
 .content {
-  height: 100vh;
+  height: 100%;
   width: 85%;
   background: url('../img/about-bg.jpg') repeat center;
   overflow: hidden;
@@ -283,7 +283,6 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-
 .sign {
   font-family: 'Mrs Saint Delafield', cursive;
   font-size: 36px;
@@ -294,8 +293,9 @@ a:hover {
 
 .line {
   width: 10px;
-  height: 5px;
-  background-color: var(--orange);
+  height: 2px;
+  margin: 10px 0;
+  background-color: var(--brand);
   animation: example 45s linear infinite;
 }
 
@@ -311,7 +311,7 @@ a:hover {
 
 .content li {
   padding: 10px;
-  width: 300px;
+  width: auto;
   box-shadow: 2px 2px 2px var(--brand);
   margin: 15px 5px;
   transition: all .2s ease-in-out;
@@ -341,7 +341,7 @@ a:hover {
 }
 
 .content .done {
-  background-color: #fa6d63;
+  background-color: green;
 }
 
 /* Work css */
@@ -359,7 +359,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   color: var(--white);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .owl-prev,
@@ -411,26 +411,21 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
-
   50% {
     transform: rotate(180deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
 
-
 @keyframes rotates {
   0% {
     transform: rotate(0deg);
   }
-
   50% {
     transform: rotate(-180deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
@@ -440,11 +435,9 @@ a:hover {
   0% {
     width: 0;
   }
-
   50% {
     width: 100%;
   }
-
   100% {
     width: 0;
   }
@@ -460,7 +453,7 @@ form {
 
 input {
   border: 0;
-  font-size: 24px;
+  font-size: 18px;
   border-bottom: 2px solid var(--orange);
   margin: 20px 0;
   color: var(--brand);
@@ -486,78 +479,61 @@ input:focus {
   .container {
     width: 90%;
   }
-
   .title {
     font-size: 4rem;
   }
-
   .innerpage .menu-icon {
     color: var(--white);
   }
-
   .social {
     margin-top: 150px;
   }
-
   .link {
     font-size: 24px;
     text-align: left;
   }
-
   .link::after {
     height: 4px;
   }
-
   .sidebar,
   .line {
     display: none;
   }
-
   .innerpage .content {
     width: 100%;
   }
-
   .innerpage .header {
     background-color: var(--brand);
   }
-
   .page-content {
     font-size: 16px;
     padding: 10px;
   }
-
   .page-title {
     margin-top: 100px;
     font-size: 40px;
     text-align: center;
   }
-
   .tagline {
     font-size: 24px;
     text-align: center;
   }
-
   input {
     width: 100%;
     font-size: 20px;
   }
-
   .btn {
     width: 100%;
   }
-
   .owl-carousel .owl-item img {
     height: 100%;
   }
-
   .owl-nav {
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
   }
-
   .owl-prev,
   .owl-next {
     margin: 20px;
-
   }
 }
