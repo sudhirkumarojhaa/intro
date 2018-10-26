@@ -306,23 +306,23 @@ a:hover {
 /* bucketlist css */
 
 .left {
-  transform: rotate(4deg);
+  transform: rotate(3deg);
 }
 
 .right {
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
 }
 
 .content li {
   padding: 10px;
   width: 300px;
-  box-shadow: 5px 5px 5px var(--black);
+  box-shadow: 2px 2px 2px var(--brand);
   margin: 15px 5px;
   transition: all .2s ease-in-out;
   font-family: 'Lato', sans-serif;
-  background: var(--brand);
+  color: var(--black);
   text-transform: capitalize;
-  color: var(--white);
+  background-color: var(--white);
   font-size: 20px;
   letter-spacing: 2px;
   list-style-type: disc;
@@ -338,6 +338,10 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.bucket .page-content {
+  background: transparent;
 }
 
 .content .done {
@@ -411,9 +415,11 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -424,9 +430,11 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(-180deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -436,9 +444,11 @@ a:hover {
   0% {
     width: 0;
   }
+
   50% {
     width: 100%;
   }
+
   100% {
     width: 0;
   }
@@ -480,59 +490,80 @@ input:focus {
   .container {
     width: 90%;
   }
+
   .title {
     font-size: 4rem;
   }
+
   .innerpage .menu-icon {
     color: var(--white);
   }
+
   .social {
     margin-top: 150px;
   }
+
   .link {
     font-size: 24px;
     text-align: left;
   }
+
   .link::after {
     height: 4px;
   }
-  .sidebar {
+
+  .sidebar,
+  .line {
     display: none;
   }
+
   .innerpage .content {
     width: 100%;
     height: 100%;
   }
+
   .innerpage .header {
     background-color: var(--brand);
   }
+
   .page-content {
     font-size: 16px;
     padding: 10px;
-    text-align: center;
+
   }
+
   .page-title {
     margin-top: 100px;
     font-size: 52px;
+    text-align: center;
   }
+
   .tagline {
     font-size: 30px;
     text-align: center;
   }
+
   input {
     width: 100%;
     font-size: 20px;
   }
+
   .btn {
     width: 100%;
   }
+
+  .owl-carousel .owl-item img {
+    height: 100%;
+  }
+
   .owl-nav {
     justify-content: center;
     font-size: 18px;
   }
+
   .owl-prev,
   .owl-next {
-    margin:  20px;
+    margin: 20px;
 
   }
 }
