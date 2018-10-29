@@ -38,7 +38,7 @@ $('.owl-carousel').owlCarousel({
       nav: false
     },
     1000: {
-      items: 2,
+      items: 4,
       nav: true,
       loop: false
     }
@@ -48,3 +48,5 @@ $('.owl-carousel').owlCarousel({
 
 $( ".owl-prev").html('<i class="fas fa-arrow-left"></i>');
 $( ".owl-next").html('<i class="fas fa-arrow-right"></i>');
+
+

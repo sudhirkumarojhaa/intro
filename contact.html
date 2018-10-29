@@ -50,20 +50,40 @@
           <h1 class="tagline">Get in Touch</h1>
           <div class="line"></div>
           <p>Good things happen when we connect and share our thought and ideas.</p>
-          <form action="/action_page.php">
-            <input type="text" id="name" name="name" placeholder="Name..">
-            <input type="email" id="email" name="email" placeholder="Email..">
-            <input type="textarea" id="comments" name="comments" placeholder="What you want to discuss..">
+          <form id="form">
+            <input type="text" id="name" name="name" placeholder="Name.." required>
+            <input type="email" id="email" name="email" placeholder="Email.." required>
+            <input type="textarea" id="comments" name="comments" placeholder="What you want to discuss.." required>
             <input type="number" id="phone" name="phone" placeholder="Contact Number ..">
-            <input class="btn" type="submit" value="Submit">
+            <input class="btn" id="submit" onclick="submitForm(e)" type="submit" value="Submit">
+            <div class="alert">
+              <h1>Thanks for submitting the form. Will get in touch pretty soon.</h1>
+            </div>
           </form>
         </div>
       </div>
     </section>
   </section>
 
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDqT9vk3c_yy5iPQCZS2KgCNr-GlrLQEOw",
+      authDomain: "intro-480a8.firebaseapp.com",
+      databaseURL: "https://intro-480a8.firebaseio.com",
+      projectId: "intro-480a8",
+      storageBucket: "intro-480a8.appspot.com",
+      messagingSenderId: "768771080231"
+    };
+    firebase.initializeApp(config);
+    var messagesRef = firebase.database().ref('messages');
+  </script>
+  <script>
 
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/custom.js"></script>
 </body>
 
