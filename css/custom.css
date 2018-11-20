@@ -223,20 +223,46 @@ a:hover {
   height: 100%;
   width: 85%;
   background: url('../img/aboutbg.jpg') repeat center;
+  background-size: 400px;
+}
+
+.about .page-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-pic {
+  width: 30%;
+  overflow: hidden;
+}
+
+.about-pic .thumbnail {
+  margin: 10px;
+  border: 1px solid var(--orange);
+  padding: 10px;
+}
+
+
+
+.about-content {
+  width: 70%;
+  padding: 0 20px;
+  font-size: 18px;
 }
 
 .bucket .content {
   height: 100%;
   width: 85%;
-  background: url('../img/bucketbg.jpg') repeat center;
-  background-size: 200px;
+  background: url('../img/bucket.jpeg') repeat ;
+  background-size: cover;
 }
 
 .contact .content {
   height: 100%;
   width: 85%;
   background: url('../img/contactbg.jpeg') repeat center;
-  background-size: 200px;
+  background-size: 150px;
 }
 
 .tagline {
@@ -295,7 +321,7 @@ a:hover {
   margin: 10px 0;
   background-color: var(--brand);
   animation: example 50s linear infinite;
-  box-shadow: 0 10px 10px #333;
+  box-shadow: 0 5px 10px rgb(248, 128, 15);
 }
 
 /* bucketlist css */
@@ -309,7 +335,7 @@ a:hover {
 }
 
 .content li {
-  padding: 10px;
+  padding: 10px 30px;
   width: auto;
   box-shadow: 10px 10px 10px #777;
   margin: 15px 5px;
@@ -337,13 +363,23 @@ a:hover {
 }
 
 .bucket .page-content {
-  background: rgba(255, 255, 255, 0.9);
-  margin: 100px 0;
-  padding: 100px 40px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+.quotes {
+  text-align: center;
+  font-family: 'Allura',
+  cursive;
+  color: var(--brand);
+  font-size: 30px;
+   background: rgba(255, 255, 255, 1);
+  padding: 10px 0;
 }
 
 .content .done {
-  background-color: green;
+  background-color: #08b87d;
 }
 
 .alert {
@@ -479,9 +515,11 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -491,9 +529,11 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(-180deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -503,9 +543,11 @@ a:hover {
   0% {
     width: 0;
   }
+
   50% {
     width: 100%;
   }
+
   100% {
     width: 0;
   }
@@ -558,71 +600,101 @@ input:focus {
   .container {
     width: 90%;
   }
+
   .title {
     font-size: 3.3rem;
   }
+
   .tag {
     font-size: 1rem;
   }
+
   .innerpage .menu-icon {
     color: var(--white);
   }
+
   .social {
     margin-top: 150px;
   }
+
   .social a {
     font-size: 18px;
   }
+
   .link {
     font-size: 24px;
     text-align: left;
   }
+
   .link::after {
     height: 4px;
   }
+
   .sidebar,
   .line {
     display: none;
   }
+
   .innerpage .content {
     width: 100%;
     overflow: scroll;
   }
+
   .innerpage .header {
     background-color: var(--brand);
   }
+
   .page-content {
     font-size: 16px;
     padding: 10px;
   }
+
   .page-title {
     margin-top: 75px;
     font-size: 40px;
     text-align: center;
   }
+
+  .about-pic,
+  .about-content {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .about .page-content {
+    flex-direction: column-reverse;
+  }
+
   .tagline {
     font-size: 24px;
     text-align: center;
   }
+
   input {
     width: 100%;
   }
+
   .btn {
     width: 100%;
   }
+
   .alert {
     border: 10px solid #ee3b80;
     background-position-y: 100px;
     padding: 0;
     font-size: 14px;
   }
+
   .owl-carousel .owl-item img {
     height: 100%;
   }
+
   .owl-nav {
     justify-content: center;
     font-size: 20px;
   }
+
   .owl-prev,
   .owl-next {
     margin: 20px;
