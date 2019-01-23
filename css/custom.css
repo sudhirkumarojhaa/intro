@@ -104,7 +104,8 @@ a:hover {
 
 .tag {
   color: var(--brand);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  padding-top: 10px;
   /* text-shadow: 2px 2px 2px var(--overlay); */
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -176,7 +177,7 @@ a:hover {
   content: '';
   display: block;
   width: 0;
-  height: 10px;
+  height: 2px;
   background: var(--orange);
   transition: width .3s;
 }
@@ -609,9 +610,6 @@ input:focus {
   .link {
     font-size: 18px;
     text-align: left;
-  }
-  .link::after {
-    height: 4px;
   }
   .sidebar,
   .line {
