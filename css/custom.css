@@ -104,7 +104,7 @@ a:hover {
 
 .tag {
   color: var(--brand);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-top: 10px;
   /* text-shadow: 2px 2px 2px var(--overlay); */
   text-transform: uppercase;
