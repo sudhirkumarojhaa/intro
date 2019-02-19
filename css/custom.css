@@ -112,6 +112,16 @@ a:hover {
   font-family: 'Rajdhani', sans-serif;
 }
 
+.resume {
+  padding: 4px 10px;
+  font-weight: 900;
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
 .menu-icon {
   color: var(--white);
   font-size: 30px;
