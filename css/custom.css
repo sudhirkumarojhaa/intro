@@ -96,7 +96,7 @@ a:hover {
 
 .title {
   font-size: 5rem;
-  color: var(--brand);
+  color: var(--white);
   text-transform: uppercase;
   letter-spacing: 20px;
   /* font-family: 'Allura', cursive; */
@@ -104,22 +104,20 @@ a:hover {
 
 .tag {
   color: var(--brand);
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 10px;
   /* text-shadow: 2px 2px 2px var(--overlay); */
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Rajdhani', sans-serif;
 }
 
 .resume {
   padding: 4px 10px;
   font-weight: 900;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
+  letter-spacing: 4px;
 }
 
 .menu-icon {
