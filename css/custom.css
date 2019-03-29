@@ -76,58 +76,10 @@ a:hover {
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(121deg, #EE7752, #E73C7E, #23A6D5);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 60s ease infinite;
-  -moz-animation: Gradient 60s ease infinite;
-  animation: Gradient 60s ease infinite;
-  /* background: url('../img/banner.jpeg') no-repeat center;
-  background-size: cover;
-  background: linear-gradient(170deg, rgba(16, 2, 2, 1) 50%, #FF5722 44%); */
   position: relative;
   z-index: 100;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
 }
 
 /* .home::after {
