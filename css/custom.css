@@ -99,11 +99,10 @@ a:hover {
 } */
 
 .title {
-  font-size: 5rem;
+  font-size: 10vw;
   color: var(--white);
   text-transform: uppercase;
-  letter-spacing: 20px;
-  /* font-family: 'Allura', cursive; */
+  letter-spacing: 10px;
 }
 
 .tag {
@@ -610,10 +609,6 @@ input:focus {
     width: 90%;
   }
 
-  .title {
-    font-size: 3rem;
-    letter-spacing: 0;
-  }
 
   .tag {
     font-size: 0.8rem;
