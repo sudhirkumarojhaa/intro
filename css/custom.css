@@ -50,7 +50,7 @@ a:hover {
 }
 
 .color {
-  color: var(--orange);
+  color: var(--orange) !important;
   padding: 0 15px;
 }
 
@@ -80,8 +80,7 @@ a:hover {
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
-  background-image: linear-gradient(121deg, rgba(23, 3, 68, 0.8), rgb(82, 0, 27)),
-  url(https://thimpress.com/wp-content/uploads/2017/10/ios_7_galaxy_wallpaper_for_desktop_by_iar7-d6av9ap-1.png);
+  background-image: linear-gradient(160deg, rgba(6, 17, 26), rgba(82, 0, 27, 0.1)), url('../img/banner.jpg');
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,23 +88,10 @@ a:hover {
   z-index: 100;
 }
 
-/* .home::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-  background-color: rgba(0,0,0, 0.5);
-} */
-
 .title {
   font-size: 36px;
   color: var(--white);
   text-transform: uppercase;
-  letter-spacing: 5px;
 }
 
 .tag {
@@ -113,7 +99,6 @@ a:hover {
   font-size: 12px;
   padding-top: 10px;
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .resume {
@@ -174,10 +159,10 @@ a:hover {
 }
 
 .link {
-  padding-right: 20px;
+  padding-right: 40px;
   padding: 8px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--white);
@@ -204,7 +189,7 @@ a:hover {
   position: absolute;
   top: 5px;
   right: 15px;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .social {
@@ -226,8 +211,8 @@ a:hover {
 }
 
 .social a:hover {
-  color: var(--black);
-  transition: all .3s linear;
+  color: khaki;
+  transition: all .2s linear;
 }
 
 /* About Page css  */
@@ -259,14 +244,20 @@ a:hover {
 }
 
 .about-pic .thumbnail {
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .about-content {
   width: 70%;
-  padding: 0 20px;
-  font-size: 18px;
+  padding: 10px 20px;
+
+}
+
+.about .detail {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
 }
 
 .bucket .content {
@@ -283,7 +274,8 @@ a:hover {
 
 .tagline {
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 14px;
+  padding-top: 20px;
 }
 
 .innerpage .menu-icon {
@@ -309,14 +301,14 @@ a:hover {
 .page-title {
   padding: 10px 30px;
   font-family: 'Abril Fatface', cursive;
-  font-size: 80px;
+  font-size: 60px;
   text-transform: capitalize;
   text-align: center;
 }
 
 .page-content {
   font-size: 24px;
-  margin: 20px 0;
+  margin: 40px 0;
   font-family: 'Times New Roman', serif;
   padding: 10px 50px;
   color: var(--gray);
@@ -325,7 +317,7 @@ a:hover {
 
 .sign {
   font-family: 'Mrs Saint Delafield', cursive;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   color: var(--brand);
   text-align: left;
@@ -333,9 +325,9 @@ a:hover {
 
 .line {
   width: 10px;
-  height: 2px;
+  height: 1px;
   margin: 10px 0;
-  background-color: var(--brand);
+  background-color: #d3d3d3;
   animation: example 50s linear infinite;
   box-shadow: 0 5px 10px rgb(248, 128, 15);
 }
@@ -366,7 +358,7 @@ a:hover {
 }
 
 .content li:hover {
-  background: var(--white);
+  background: #E73C75;
   transform: rotate(0deg);
   box-shadow: none;
 }
@@ -381,6 +373,7 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 30px 40px;
 }
 
 .bucket .page-content {
@@ -421,9 +414,8 @@ a:hover {
 /* Work css */
 
 .work .card {
-  box-shadow: 1px 1px 10px #999;
+  box-shadow: 1px 1px 10px #d3d3d3;
   color: var(--brand);
-  border-radius: 5px;
   text-align: center;
   display: flex;
   justify-content: flex-start;
@@ -432,10 +424,15 @@ a:hover {
   flex-direction: column;
   text-transform: capitalize;
   background: url('../img/web.png') center no-repeat;
-  background-size: 100px;
+  background-size: 300px;
   margin: 10px;
-  padding-top: 20px;
+  padding: 20px;
   position: relative;
+}
+
+.work .card .project {
+  font-size: 18px;
+  padding: 0 10px;
 }
 
 .work .card .tech {
@@ -443,17 +440,17 @@ a:hover {
   letter-spacing: 1px;
   color: var(--white);
   background-color: var(--tomato);
-  font-size: 14px;
+  font-size: 10px;
   position: absolute;
   bottom: 0;
-  padding: 20px 0;
+  padding: 15px 0;
   left: 0;
   width: 100%;
 }
 
 .work .mobile {
-  background: url('../img/mobile.png') center no-repeat;
-  background-size: 100px;
+  background: url('../img/web.png') center no-repeat;
+  background-size: 300px;
 }
 
 .work .mobile .tech {
@@ -671,21 +668,18 @@ input:focus {
     flex-direction: column-reverse;
   }
 
-  .tagline {
-    font-size: 24px;
-    text-align: center;
-  }
-
   input {
-    width: 100%;
+    width: 70%;
+    margin: 20px auto;
   }
 
-  .overlay .closebtn {
-    font-size: 30px;
+  .bucketlist {
+    padding: 10px;
   }
+
 
   .btn {
-    width: 100%;
+    width: 70%;
   }
 
   .alert {

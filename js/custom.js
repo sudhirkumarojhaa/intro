@@ -1,27 +1,23 @@
-var home = $('.home');
+const home = $('.home');
 home.hide();
 home.delay(300).fadeIn(300);
 
-
 /* Open */
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById('myNav').style.width = '100%';
 }
 
 /* Close */
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById('myNav').style.width = '0%';
 }
-
 
 $('.owl-carousel').owlCarousel({
   loop: true,
-  margin: 5,
   responsiveClass: true,
-  autoplay:true,
-  autoplayTimeout:5000,
-  animateOut: 'fadeOut',
-  autoplayHoverPause:true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
   animateOut: 'slideOutDown',
   animateIn: 'flipInX',
   items: 1,
@@ -31,22 +27,19 @@ $('.owl-carousel').owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: true
+      nav: true,
     },
     600: {
       items: 2,
-      nav: false
+      nav: false,
     },
     1000: {
-      items: 4,
+      items: 3,
       nav: true,
-      loop: false
-    }
-  }
-})
+      loop: false,
+    },
+  },
+});
 
-
-$( ".owl-prev").html('<i class="fas fa-arrow-left"></i>');
-$( ".owl-next").html('<i class="fas fa-arrow-right"></i>');
-
-
+$('.owl-prev').html('<i class="fas fa-arrow-left"></i>');
+$('.owl-next').html('<i class="fas fa-arrow-right"></i>');

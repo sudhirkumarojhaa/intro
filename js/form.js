@@ -1,21 +1,20 @@
 document.getElementById('form').addEventListener('submit', submitForm);
 
-
 function submitForm(e) {
   e.preventDefault();
-  var name = getInput('name');
-  var email = getInput('email');
-  var phone = getInput('phone');
-  var comments = getInput('comments');
-  //save message
+  let name = getInput('name');
+  let email = getInput('email');
+  let phone = getInput('phone');
+  let comments = getInput('comments');
+  // save message
   saveMessage(name, email, phone, comments);
-  //show alert
-  document.querySelector('.alert').style.display = "block";
-  //hide alert
-  setTimeout(function () {
-    document.querySelector('.alert').style.display = "none";
+  // show alert
+  document.querySelector('.alert').style.display = 'block';
+  // hide alert
+  setTimeout(function() {
+    document.querySelector('.alert').style.display = 'none';
   }, 3000);
-  //clear form
+  // clear form
   document.getElementById('form').reset();
 }
 
@@ -24,11 +23,11 @@ function getInput(id) {
 }
 
 function saveMessage(name, email, phone, comments) {
-  var newMessageRef = messagesRef.push();
+  let newMessageRef = messagesRef.push();
   newMessageRef.set({
-    name: name,
-    email: email,
-    phone: phone,
-    comments: comments
-  })
+    name,
+    email,
+    phone,
+    comments,
+  });
 }
