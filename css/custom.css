@@ -209,7 +209,7 @@ a:hover {
   justify-content: space-around;
   font-size: 20px;
   bottom: 40px;
-  left: 10px;
+  left: 10%;
 }
 
 .social li {
@@ -625,7 +625,7 @@ input:focus {
 
 
   .menu-icon {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .innerpage .menu-icon {
@@ -692,6 +692,10 @@ input:focus {
     width: 60px;
   }
 
+  .logo-name {
+    font-size: 20px;
+  }
+
   .alert {
     border: 10px solid #ee3b80;
     background-position-y: 100px;
@@ -715,10 +719,6 @@ input:focus {
 
   .social a {
     font-size: 24px;
-  }
-
-  .social {
-    bottom: 90px;
   }
 }
 
