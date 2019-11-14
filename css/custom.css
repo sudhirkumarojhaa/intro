@@ -102,7 +102,7 @@ a:hover {
 
 .tag {
   color: var(--white);
-  font-size: 16px;
+  font-size: 12px;
   padding-top: 20px;
   letter-spacing: 2px;
   text-align: right;
@@ -124,11 +124,15 @@ a:hover {
   padding: 15px;
 }
 
-.logo {
+.logo-name {
   font-size: 24px;
   letter-spacing: 2px;
   padding: 15px 10px;
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  width: 100px;
 }
 
 .header {
@@ -619,6 +623,7 @@ input:focus {
     font-size: 36px;
   }
 
+
   .menu-icon {
     font-size: 20px;
   }
@@ -681,6 +686,10 @@ input:focus {
 
   .btn {
     width: 70%;
+  }
+
+  .logo {
+    width: 60px;
   }
 
   .alert {
