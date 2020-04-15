@@ -5,10 +5,7 @@
 ## Portfolio Link: 
 ### https://sudhirkumarojhaa.github.io/intro/
 
-
-### https://join.skype.com/invite/sxugx3VwE05N
-
-## Reach out to me via any of the following links. 
+## Reach out to me via any of the following social links. 
 
 ### Instagram : https://www.instagram.com/navigatorkumar/
 
