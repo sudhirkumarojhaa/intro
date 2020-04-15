@@ -1,6 +1,6 @@
 ## Portfolio
 
-### Sudhir Kumar
+## Sudhir Kumar
 ##  React Native Developer, India
 
 ### https://join.skype.com/invite/sxugx3VwE05N
