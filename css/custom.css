@@ -58,10 +58,6 @@ a:hover {
   color: var(--black);
 }
 
-.red {
-  color: #e50914;
-}
-
 .header {
   position: absolute;
   width: 100%;
@@ -83,8 +79,7 @@ a:hover {
   align-items: flex-start;
   flex-direction: column;
   min-height: 100vh;
-  background: #000;
-  /* text-align: center; */
+  background-color: #348081;
   position: relative;
   z-index: 100;
 }
@@ -222,7 +217,7 @@ a:hover {
 }
 
 .social a:hover {
-  color: #e50914;
+  color: #000;
   transition: all 0.2s linear;
 }
 
