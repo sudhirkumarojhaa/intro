@@ -89,9 +89,8 @@ a:hover {
 }
 
 .title {
-  font-size: 8vw;
+  font-size: 90px;
   color: var(--white);
-  /* font-family: 'Allura', cursive; */
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
