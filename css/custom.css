@@ -55,7 +55,7 @@ a:hover {
 }
 
 .highlight {
-  color: var(--black);
+  color: var(--orange);
 }
 
 .header {
@@ -79,7 +79,7 @@ a:hover {
   align-items: flex-start;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #348081;
+  background-color: #060111;
   position: relative;
   z-index: 100;
 }
@@ -89,10 +89,20 @@ a:hover {
 }
 
 .title {
-  font-size: 90px;
+  font-size: 36px;
   color: var(--white);
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.txt-right {
+  color: var(--white);
+  font-size: 24px;
+  position: absolute;
+  bottom: 10%;
+  left: 15px;
+  text-align: left;
+}
+
 
 .tag {
   color: var(--white);
@@ -203,7 +213,7 @@ a:hover {
   justify-content: space-around;
   font-size: 20px;
   bottom: 40px;
-  left: 0;
+  right: 0;
 }
 
 .social li {
@@ -613,13 +623,9 @@ input:focus {
     width: 90%;
   }
 
-  .title {
-    font-size: 36px;
-  }
-
-
-  .menu-icon {
-    font-size: 18px;
+  .menu-icon,
+  .txt-right {
+    font-size: 16px;
   }
 
   .innerpage .menu-icon {
@@ -686,9 +692,6 @@ input:focus {
     width: 60px;
   }
 
-  .logo-name {
-    font-size: 20px;
-  }
 
   .alert {
     border: 10px solid #ee3b80;
@@ -712,7 +715,7 @@ input:focus {
   }
 
   .social a {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
